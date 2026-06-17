@@ -30,3 +30,15 @@ steps:
 
     tags: |
       $(tag)
+
+- task: KubernetesManifest@1
+
+  inputs:
+
+    action: deploy
+
+    kubernetesServiceConnection: AKS-ServiceConnection
+
+    manifests: |
+      k8s/deployment.yaml
+      k8s/service.yaml
