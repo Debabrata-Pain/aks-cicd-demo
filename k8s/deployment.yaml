@@ -25,7 +25,7 @@ spec:
 
       - name: flaskdemo
 
-        image: myacr.azurecr.io/flaskdemo:latest
+        image: myacr.azurecr.io/flaskdemo:$(tag)
 
         ports:
 
